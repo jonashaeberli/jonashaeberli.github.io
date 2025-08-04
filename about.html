@@ -8,13 +8,31 @@
       <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <div class="cursor" id="cursor"></div>
-    <div id="navbar"></div>
-    <script>
-      fetch("nav.html")
-        .then(res => res.text())
-        .then(data => document.getElementById("navbar").innerHTML = data);
-    </script>
-    <script src="script.js"></script>
+      <div class="cursor" id="cursor"></div>
+      <div id="navbar"></div>
+
+      <main class="about-container">
+        <section class="about-content">
+          <h1>About Me</h1>
+
+          <p>Hi, I'm <strong>Jonas Häberli</strong> — a passionate mechanical engineer with a strong focus on robotics and automation.</p>
+
+          <p>My professional journey began in 2020 with an apprenticeship as a design engineer. In Switzerland, this hands-on education path provides a nationally recognized qualification, offering direct entry into the engineering field. During my apprenticeship, I gained early and practical exposure to mechanical design and development. In 2024, I graduated as the top-performing design engineering apprentice in the canton of Bern.</p>
+
+          <p>Alongside my apprenticeship, I earned two additional academic certifications — the <em>Berufsmaturität</em> and the <em>Passerelle</em> — which allow me to study at a Swiss university without attending traditional secondary school.</p>
+
+          <p>After completing the apprenticeship, I continued working at the same company, contributing to the development of a fully automated packaging machine. My role focused primarily on conceptual and design engineering tasks. Following this project, I completed my mandatory military service in the Swiss Army before transitioning to academic studies.</p>
+
+          <p>In 2025, I’ll begin studying Mechanical Engineering at <strong>ETH Zurich</strong>, where I plan to deepen my expertise and continue developing innovative robotic and automation systems.</p>
+
+        </section>
+      </main>
+
+      <script>
+        fetch("nav.html")
+          .then(res => res.text())
+          .then(data => document.getElementById("navbar").innerHTML = data);
+      </script>
+      <script src="script.js"></script>
     </body>
 </html>
