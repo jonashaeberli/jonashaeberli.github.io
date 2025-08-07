@@ -1,39 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jonas Häberli</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!--This part needs to be changed in all subsides-->
+  <canvas id="background-grid"></canvas>
 
-  <div id="navbar"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("navbar").innerHTML = data);
-  </script>
+  <nav class="menu-bar">
+    <ul>
+      <li><a href="index.html">Links</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <script src="background.js"></script>
+  <!--Part of repetition ends here-->
 
-  <div class="container">
-    <img src="images/myself.jpg" alt="Profile picture" class="profile-img" />
-    <h1>Jonas Häberli</h1>
-    <p>Konstrukteur EFZ (Design Engineer) | Robotics Enthusiast</p>
-    <p>Mechanical Engineering Student</p>
-    <div class="social-links">
-      <a href="https://github.com/jonashaeberli" target="_blank">
-        <img src="images/github.svg" alt="GitHub" class="social-icon" />
-      </a>
-      <a href="https://www.fiverr.com/users/hdjg_swm" target="_blank">
-        <img src="images/fiverr.svg" alt="Fiverr" class="social-icon" />
-      </a>
-      <a href="https://www.printables.com/@HDJG_39297" target="_blank">
-        <img src="images/printables.svg" alt="Printables" class="social-icon" />
-      </a>
+  <!--Here goes the main Element of the site-->
+  <div class="page-container">
+  <div class="main-site-content">
+
+    <div class="main-site-left-content">
+      <div class="thats-me">
+        <img src="images/myself.jpg" alt="Profile picture" class="profile-img" />
+          <h1>Jonas Häberli</h1>
+          <p>Konstrukteur EFZ</p>
+          <p>Design Engineer</p>
+          <p>Robotics Enthusiast</p>
+          <p>Mechanical Engineering Student</p>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/jonashaeberli" target="_blank">
+          <img src="images/github.svg" alt="GitHub" class="social-icon" style="filter: invert(1);"/>
+        </a>
+        <a href="https://www.fiverr.com/users/hdjg_swm" target="_blank">
+          <img src="images/fiverr.svg" alt="Fiverr" class="social-icon" style="filter: invert(1);"/>
+        </a>
+        <a href="https://www.printables.com/@HDJG_39297" target="_blank">
+          <img src="images/printables.svg" alt="Printables" class="social-icon" style="filter: invert(1);"/>
+        </a>
+      </div>
     </div>
+
+    <div class="main-site-right-content">
+      <h2>About me</h2>
+      <p>Hi, I'm <strong>Jonas Häberli</strong> — a passionate mechanical engineer with a strong focus on robotics and automation.</p>
+    </div>
+
+  </div>
   </div>
 
-  <script src="script.js"></script>
 </body>
+
 </html>
